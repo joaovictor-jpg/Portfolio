@@ -1,0 +1,64 @@
+/* css page home */
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.home p span {
+    color: var(--red);
+}
+
+.home .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.home .btn_red {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.home .btn_red:hover {
+    background-color: var(--primary);
+    transition: all .5s;
+}
+
+.home img {
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .home p {
+        font-size: 2rem;
+    }
+
+    .home img {
+        max-width: 100%;
+        height: auto;
+        padding-inline: 2.5rem;
+    }
+}
