@@ -1,6 +1,6 @@
 import style from "./Header.module.css";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 function Header() {
@@ -19,10 +19,10 @@ function Header() {
         className={`${style.menuSandwich} ${showMenu ? style.show : ''}`}
         onClick={toggleMenu}
       >
-        <Link to="/">Home</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/projetos">Projetos</Link>
-        <Link to="/contatos">Contatos</Link>
+        <NavLink className={({isActive}) => `${isActive && style.active}`} to="/">Home</NavLink>
+        <NavLink className={({isActive}) => `${isActive && style.active}`} to="/sobre">Sobre</NavLink>
+        <NavLink className={({isActive}) => `${isActive && style.active}`} to="/projetos">Projetos</NavLink>
+        <NavLink className={({isActive}) => `${isActive && style.active}`} to="/contatos">Contatos</NavLink >
       </nav>
       <div onClick={toggleMenu} className={style.menuButtom}>
         <span className={style.linha}></span>
