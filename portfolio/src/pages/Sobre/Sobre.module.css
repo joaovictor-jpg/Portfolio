@@ -50,18 +50,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    row-gap: 1.5rem;
 }
 
 .icones {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-.icones img {
-    width: 90px;
+    justify-content: space-evenly;
+    column-gap: 1.5rem;
 }
 
 @media (max-width: 768px) {
@@ -79,7 +76,12 @@
 }
 
 @media (max-width: 460px) {
-    .icones img {
-        height: 40px;
+    .techs {
+        width: 90%;
+        row-gap: 0.2rem;
+    }
+
+    .icones {
+        column-gap: 0.2rem;
     }
 }
