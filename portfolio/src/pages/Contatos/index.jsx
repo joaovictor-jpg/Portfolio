@@ -32,7 +32,7 @@ function Contatos() {
           <BsGithub className={styles.icon} />
         </a>
         <a
-          href="https://www.linkedin.com/in/joãovictorperfil/"
+          href="https://www.linkedin.com/in/joaoperfilv2/"
           target="_blank"
           rel="nopener noreferre"
         >
