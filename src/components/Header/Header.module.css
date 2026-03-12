@@ -1,0 +1,20 @@
+.header {
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--mantine-spacing-sm);
+}
+
+.title {
+    font-size: var(--mantine-font-size-lg);
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--mantine-color-primary-6) 5%, var(--mantine-color-tertiary-6) 95%);
+}
+
+.menu {
+    align-items: center;
+    gap: var(--mantine-spacing-xs);
+}
