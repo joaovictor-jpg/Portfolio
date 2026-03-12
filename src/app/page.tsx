@@ -1,7 +1,7 @@
-import { Title } from "@mantine/core";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <Title order={1}>Hello World</Title>
+    <Header />
   );
 }

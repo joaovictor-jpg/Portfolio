@@ -2,6 +2,7 @@ import { theme } from "@/theme/Theme";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
+import "@mantine/core/styles.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
