@@ -1,4 +1,5 @@
 .header {
+  padding: var(--mantine-spacing-lg);
   justify-content: space-between;
   align-items: center;
 }
