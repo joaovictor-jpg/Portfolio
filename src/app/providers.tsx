@@ -5,6 +5,7 @@ import { Notifications } from "@mantine/notifications";
 import { ModalsProvider } from "@mantine/modals";
 import { ReactNode, useState } from "react";
 import { theme } from "@/styles/theme";
+import { Header } from "@/components/Header";
 
 type ProvidersProps = {
   children: ReactNode;
@@ -21,18 +22,7 @@ export default function Providers({ children }: Readonly<ProvidersProps>) {
     <MantineProvider theme={theme} forceColorScheme={colorScheme}>
       <ModalsProvider>
         <Notifications />
-        <button
-          onClick={toggleTheme}
-          style={{
-            position: "fixed",
-            top: 20,
-            right: 20,
-            zIndex: 999,
-          }}
-        >
-          Toggle
-        </button>
-
+        <Header />
         {children}
       </ModalsProvider>
     </MantineProvider>

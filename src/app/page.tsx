@@ -1,5 +1,9 @@
-import { Title } from "@mantine/core";
+import { Box, Title } from "@mantine/core";
 
 export default function Home() {
-  return <Title>JVM</Title>;
+  return (
+    <Box component="main">
+      <Title order={2}>Hello World</Title>
+    </Box>
+  )
 }
